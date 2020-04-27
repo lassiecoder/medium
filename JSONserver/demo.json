@@ -1,0 +1,46 @@
+{
+    "empp" : [
+        {
+            "id" : 1,
+            "name" : "emp-1",
+            "sal" : 10000,
+            "dept" : "training"
+        },
+        {
+            "id" : 2,
+            "name" : "emp-2",
+            "sal" : 20000,
+            "dept" : "senior-developer"
+        },
+        {
+            "id" : 3,
+            "name" : "emp-3",
+            "sal" : 30000,
+            "dept" : "teaching"
+        },
+        {
+            "id" : 4,
+            "name" : "emp-4",
+            "sal" : 40000,
+            "dept" : "testing"
+        },
+        {
+            "id" : 5,
+            "name" : "emp-5",
+            "sal" : 50000,
+            "dept" : "junior-developer"
+        },
+        {
+            "id" : 6,
+            "name" : "emp-6",
+            "sal" : 60000,
+            "dept" : "financial"
+        },
+        {
+            "id" : 7,
+            "name" : "emp-7",
+            "sal" : 70000,
+            "dept" : "application-developer"
+        }
+    ]
+}
