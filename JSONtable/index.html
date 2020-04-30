@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta firstname="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JSON data in table form </title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+</head>
+<body>
+    
+    
+<script>
+    let arr = [
+      { firstname: "Alan", lastname: "Adam", designation: "CEO", salary: 1200000},
+      { firstname: "John", lastname: "Clay", designation: "System Analyst", salary: 800000 },
+      { firstname: "Brad", lastname: "Day", designation: "Trainee Engineer", salary: 100000 },
+      { firstname: "Daisy", lastname: "Bryson", designation: "Project Manager", salary: 580000 },
+      { firstname: "Fred", lastname: "Jerome", designation: "Senior Software Engineer", salary: 900000 },
+    ];
+    document.write(`<div class="container table table-responsive mt-5">
+             <table class="table table-bordered 
+                           table-condensed 
+                           table-striped">
+                  <thead class="bg-info text-white">
+                      <tr>
+                          <th>Serial no.</th>
+                          <th>First name</th>
+                          <th>Last name</th>
+                          <th>Designation</th>
+                          <th>Salary</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+      `);
+    arr.forEach((element, index) => {
+      document.write(`
+              <tr>
+                  <td>${index + 1}</td>
+                  <td>${element.firstname}</td>
+                  <td>${element.lastname}</td>
+                  <td>${element.designation}</td>
+                  <td>${element.salary}</td>
+              </tr>
+          `);
+    });
+    document.write(`</tbody></table></div>`);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calling a response in JavaScript</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        margin: 5vw 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calling a response in JavaScript</h1>
+    <script src="jquery.min.js">
+      $.ajax({
+          method : "GET",
+          url : "http://localhost:3000/empp",
+          success : (posRes) => {
+              console.log(posRes);
+          }, error : (errRes) => {
+              console.log(errRes);
+          }
+      })
+    </script>
+  </body>
+</html>
