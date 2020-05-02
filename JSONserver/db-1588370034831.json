@@ -41,6 +41,12 @@
       "name": "Orson",
       "sal": 70000,
       "dept": "application-developer"
+    },
+    {
+      "id": 8,
+      "name": "John",
+      "sal": 25000,
+      "dept": "DevOps"
     }
   ]
 }

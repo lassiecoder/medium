@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calling a response in JavaScript | POST Request</title>
+    <script src="jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      // POST REQUEST
+      $.ajax({
+        method: "POST",
+        url: "http://localhost:3000/empp",
+        data: {
+          id: 8,
+          name: "Anne",
+          sal: 67600,
+          dept: "Senior Software dev",
+        },
+        success: (posRes) => {
+          console.log(posRes);
+        },
+        error: (errRes) => {
+          console.log(errRes);
+        },
+      });
+    </script>
+  </body>
+</html>
