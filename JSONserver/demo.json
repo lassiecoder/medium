@@ -41,6 +41,12 @@
       "name": "Orson",
       "sal": 70000,
       "dept": "application-developer"
+    },
+    {
+      "id" : 8,
+      "name" : "Anne",
+      "sal" : 54000,
+      "dept" : "Internet Marketing Head"
     }
   ]
 }

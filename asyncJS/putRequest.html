@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Calling a response in JavaScript | POST Request</title>
+    <title>Calling a response in JavaScript | PUT Request</title>
     <script src="jquery.min.js"></script>
   </head>
   <body>
-    <script> 
-    // POST REQUEST
+    
+    <script>
+    //   UPDATE/PUT/PATCH REQUEST 
     $.ajax({
-      method : "POST",
-      url : "http://localhost:3000/empp",
+      method : "PATCH",
+      url : "http://localhost:3000/empp/2",
       data : {
-        "id" : 8,
-        "name" : "Anne",
-        "sal" : 54000,
-        "dept" : "Internet Marketing Head"
+        "name" : "Sebastian"
       },
       success : (posRes) => {
           console.log(posRes);
       }, error : (errRes) => {
           console.log(errRes);
-      } 
+      }
     })
     </script>
   </body>

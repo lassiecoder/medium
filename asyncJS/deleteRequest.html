@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calling a response in JavaScript | DELETE Request</title>
+    <script src="jquery.min.js"></script>
+  </head>
+  <body>
+    
+    <script> 
+    // DELETE REQUEST         
+    $.ajax({
+      method : "DELETE",
+      url : "http://localhost:3000/empp/1",
+      success : (posRes) => {
+          console.log(posRes);
+      }, error : (errRes) => {
+          console.log(errRes);
+      }
+    })
+    </script>
+
+  </body>
+</html>
